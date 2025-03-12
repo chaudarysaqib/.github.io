@@ -6,31 +6,55 @@
     <title>Muhammad Saqib - IT Administrator</title>
     <style>
         body {
-            background-color: blue;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
             text-align: center;
             font-family: Arial, sans-serif;
-            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        img {
-            border-radius: 50%;
+        .profile-pic {
             width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
         }
-        a {
-            color: yellow;
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: white;
+            color: #ff7e5f;
             text-decoration: none;
             font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
+        .links a:hover {
+            background: #ff5733;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>MUHAMMAD SAQIB</h1>
+    <img src="profile.jpg" alt="Muhammad Saqib" class="profile-pic">
+    <h1>Muhammad Saqib</h1>
     <h2>IT Administrator</h2>
-    <p>
-        <a href="https://www.linkedin.com/in/muhammad-saqib-0627a690" target="_blank">LinkedIn</a> |
+    <div class="links">
+        <a href="https://www.linkedin.com/in/muhammad-saqib-0627a690" target="_blank">LinkedIn</a>
         <a href="https://github.com/chaudarysaqib" target="_blank">GitHub</a>
-    </p>
+    </div>
 </body>
 </html>
